@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "babysteps.js",
+  "sourceRoot": "",
+  "sources": [
+    "babysteps.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,yBAAA;;AAAA,EAAA,OAAA,GAAU,OAAO,CAAC,IAAI,CAAC,KAAb,CAAmB,CAAnB,CAAV,CAAA;;AAAA,EACA,CAAA,GAAI,CADJ,CAAA;;AAEA,OAAA,8CAAA;sBAAA;AAAA,IAAA,CAAA,IAAG,MAAA,CAAO,GAAP,CAAH,CAAA;AAAA,GAFA;;AAAA,EAIA,OAAO,CAAC,GAAR,CAAY,CAAZ,CAJA,CAAA;AAAA"
+}

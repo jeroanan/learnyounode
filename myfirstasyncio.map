@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "myfirstasyncio.js",
+  "sourceRoot": "",
+  "sources": [
+    "myfirstasyncio.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,QAAA;;AAAA,EAAA,EAAA,GAAK,OAAA,CAAQ,IAAR,CAAL,CAAA;;AAAA,EACA,IAAA,GAAO,EAAE,CAAC,QAAH,CAAY,OAAO,CAAC,IAAK,CAAA,CAAA,CAAzB,EAA6B,MAA7B,EAAqC,SAAC,GAAD,EAAM,IAAN,GAAA;WAAe,OAAO,CAAC,GAAR,CAAY,IAAI,CAAC,KAAL,CAAW,IAAX,CAAgB,CAAC,MAAjB,GAAwB,CAApC,EAAf;EAAA,CAArC,CADP,CAAA;AAAA"
+}

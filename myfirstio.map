@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "myfirstio.js",
+  "sourceRoot": "",
+  "sources": [
+    "myfirstio.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,QAAA;;AAAA,EAAA,EAAA,GAAK,OAAA,CAAQ,IAAR,CAAL,CAAA;;AAAA,EACA,IAAA,GAAO,EAAE,CAAC,YAAH,CAAgB,OAAO,CAAC,IAAK,CAAA,CAAA,CAA7B,EAAiC,MAAjC,CADP,CAAA;;AAAA,EAEA,OAAO,CAAC,GAAR,CAAY,IAAI,CAAC,KAAL,CAAW,IAAX,CAAgB,CAAC,MAAjB,GAAwB,CAApC,CAFA,CAAA;AAAA"
+}
