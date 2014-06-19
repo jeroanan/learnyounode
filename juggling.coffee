@@ -1,42 +1,26 @@
 h = require 'http'
 
-url1 = process.argv[2]
-url2 = process.argv[3]
-url3 = process.argv[4]
+urls = []
+streams = ["", "", ""]
+results = 0
 
-stream1 = ""
-stream2 = ""
-stream3 = ""
+populateurl = (num) -> urls[num] = process.argv[num+2]
 
-stream1ended = false
-stream2ended = false
-stream3ended = false
+doprint = -> console.log stream for stream in streams
 
-printstreams = ->
-    if stream1ended is true and stream2ended is true and stream3ended is true then doprint()
+printstreams = -> if results is 3 then doprint()
 
-doprint = ->
-  console.log(stream1)
-  console.log(stream2)
-  console.log(stream3)
+streamfinished = ->
+  results++
+  printstreams()
 
-h.get url1, (r) ->
+geturl = (num) ->
+  h.get urls[num], (r) ->
     r.setEncoding('utf8')
-    r.on "data", (d) -> stream1 +=d
-    r.on "end", ->
-      stream1ended = true
-      printstreams()
+    r.on "data", (d) -> streams[num] += d
+    r.on "end", -> streamfinished()
 
-h.get url2, (r) ->
-    r.setEncoding('utf8')
-    r.on "data", (d) -> stream2 += d
-    r.on "end", ->
-      stream2ended = true
-      printstreams()
+for num in [0..2] by 1
+  populateurl(num)
+  geturl(num)
 
-h.get url3, (r) ->
-    r.setEncoding('utf8')
-    r.on "data", (d) -> stream3 += d
-    r.on "end", ->
-      stream3ended = true
-      printstreams()
